@@ -9,3 +9,33 @@
         color: $green;
     }
 }
+
+.board {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    box-sizing: content-box;
+    border: 2px solid $green;
+}
+
+.board:focus {
+    outline: none;
+}
+
+.food,
+.snake {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.food {
+    z-index: 1;
+    background-color: blue;
+}
+
+.snake {
+    z-index: 2;
+    background-color: red;
+}
