@@ -39,6 +39,11 @@ a {
     text-decoration: none;
 }
 
+button {
+    font-family: var(--font-electrolize);
+    cursor: pointer;
+}
+
 @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;

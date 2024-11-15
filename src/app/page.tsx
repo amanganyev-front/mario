@@ -1,10 +1,10 @@
 import styles from "./page.module.scss";
-import { TicTacToe } from "./ui";
+import { Snake } from "./ui";
 
 export default function Home() {
     return (
         <main className={styles.Home}>
-            <TicTacToe />
+            <Snake/>
         </main>
     );
 }

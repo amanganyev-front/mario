@@ -1,2 +1,3 @@
 import TicTacToe from "./TicTacToe/TicTacToe";
-export { TicTacToe };
+import Snake from "./Snake/Snake";
+export { TicTacToe, Snake };
