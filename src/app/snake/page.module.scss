@@ -1,0 +1,54 @@
+@import "@/shared/variables/variables.scss";
+
+.Snake {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    h1 {
+        color: $green;
+    }
+}
+
+.board {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    box-sizing: content-box;
+    border: 2px solid $green;
+}
+
+.board:focus {
+    outline: none;
+}
+
+.food,
+.snakePart {
+    width: 100px;
+    height: 100px;
+}
+
+.snakePart {
+    z-index: 2;
+    position: absolute;
+    background-color: red;
+}
+
+.food {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: blue;
+}
+
+.reset {
+    background-color: $green;
+    color: $black;
+    border-radius: 3px;
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}

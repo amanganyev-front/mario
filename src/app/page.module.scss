@@ -1,0 +1,48 @@
+@import "@/shared/variables/variables.scss";
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    h1 {
+        color: $green;
+    }
+}
+
+.winner {
+    font-weight: 600;
+    font-size: 20px;
+    height: 24px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    button {
+        width: 100px;
+        height: 100px;
+        background: none;
+        color: white;
+        font-size: 60px;
+        font-weight: bold;
+        border: 2px solid $green;
+    }
+}
+
+.next {
+    display: flex;
+    justify-content: space-between;
+    width: 67px;
+}
+
+.reset {
+    background-color: $green;
+    color: $black;
+    border-radius: 3px;
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+}
