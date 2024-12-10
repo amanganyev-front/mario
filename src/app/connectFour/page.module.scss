@@ -1,6 +1,6 @@
 @import "@/shared/variables/variables.scss";
 
-.Home {
+.ConnectFour {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,17 +12,22 @@
 }
 
 .board {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    button {
-        width: 100px;
-        height: 100px;
-        background: none;
-        color: white;
-        font-size: 60px;
-        font-weight: bold;
-        border: 2px solid $green;
-    }
+    display: flex;
+}
+
+.line {
+    width: 100px;
+    height: 600px;
+    background: none;
+    border: 2px solid $green;
+    position: relative;
+}
+
+.chip {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
 }
 
 .next {

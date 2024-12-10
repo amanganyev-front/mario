@@ -16,13 +16,13 @@ export default function Snake() {
     }, []);
     return (
         <div className={styles.Snake}>
-            <h1>{gameOver ? `Game Over your point is ${point}` : point}</h1>
             <button
                 className={styles.reset}
                 onClick={resetGame}
             >
                 Reset game
             </button>
+            <h1>{gameOver ? `Game Over your point is ${point}` : point}</h1>
             <div className={styles.board}>
                 {snakeLoc.map((el, i) => (
                     <div

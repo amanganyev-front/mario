@@ -7,4 +7,8 @@ export const PATHS = [
         href: "/snake",
         name: "Snake",
     },
+    {
+        href: "/connectFour",
+        name: "ConnectFour",
+    },
 ];
